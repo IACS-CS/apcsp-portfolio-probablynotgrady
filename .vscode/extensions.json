@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "github.copilot",
+    "ms-vsliveshare.vsliveshare",
+    "bashmish.es6-string-css",
+    "tobermory.es6-string-html"
+  ]
+}
