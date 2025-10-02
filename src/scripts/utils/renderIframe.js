@@ -4,7 +4,7 @@ export function renderIframe(url, title = "Project", height = 400) {
   return `
       <!-- code generated in renderIframe.js -->
     <iframe 
-      src="${url}"https://iacs-cs.github.io/binary-search-chase-and-ava/
+      src="${url}"
       title="${title}"
       width="100%"
       height="${height}px"
