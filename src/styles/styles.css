@@ -3,3 +3,17 @@
 body {
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+#fullscreen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+#fullscreen > div {
+ display: none;
+}
+#fullscreen > div.active {
+ display: block;
+ flex-grow: 1;
+}
