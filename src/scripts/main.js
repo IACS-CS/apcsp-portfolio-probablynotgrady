@@ -1,4 +1,4 @@
-import { TextInterface } from "text-interface";
+import { applyTheme, TextInterface, themes } from "text-interface";
 import "../styles/styles.css";
 import { startRouter } from "./router.js";
 import "@picocss/pico/css/pico.min.css";
@@ -7,8 +7,12 @@ import "@picocss/pico/css/pico.min.css";
 router.js) */
 startRouter();
 
-let ti = new TextInterface(document.querySelector("#terminal"));
-let response = await ti.prompt("guest@Chase-DeLuca-Portfolio ~ %");
-if (response === "ls") {
-  ti.output("Documents  Downloads  Music  Pictures  Videos");
-}
+let terminal = new TextInterface(document.querySelector("#terminal"));
+applyTheme(themes.greenTerminal);
+terminal.setPrompt("guest@Chase-DeLuca-Portfolio:~$");
+terminal.hideTitle();
+terminal.outputAnimationLength = 0;
+terminal.shouldStealFocus = true;
+terminal.output("type 'help' for a list of commands");
+const prompt = await terminal.readText();
+

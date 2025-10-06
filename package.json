@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "@picocss/pico": "^2.1.1",
-    "text-interface": "^1.1.0"
+    "text-interface": "^1.2.0"
   }
 }
