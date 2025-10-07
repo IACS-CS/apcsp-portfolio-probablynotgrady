@@ -3,9 +3,9 @@ Keep track of your "To-Do" list here, including what you have already done and w
 I'll include suggested items below: feel free to add to the list!
 
 0. [x] Open the TODO-list file!
-1. [ ] Sketch a "wireframe" (rough layout) for your portfolio site. ([instructions/1-overview.md](instructions/1-overview.md))
-2. [ ] Make your first change to your homepage. ([instructions/2-first-change.md](instructions/2-first-change.md))
-3. [ ] Make your first change to a component. ([instructions/5-create-component.md](instructions/5-create-component.md))
+1. [x] Sketch a "wireframe" (rough layout) for your portfolio site. ([instructions/1-overview.md](instructions/1-overview.md))
+2. [x] Make your first change to your homepage. ([instructions/2-first-change.md](instructions/2-first-change.md))
+3. [x] Make your first change to a component. ([instructions/5-create-component.md](instructions/5-create-component.md))
 4. [ ] Write a page for your Binary Search project. (Use JavaScript template strings and functions!)
 5. [ ] Add an "acknowledgements" section listing libraries and sources. ([instructions/6-licensing.md](instructions/6-licensing.md))
 6. [ ] Install a library to change the look and feel of the site. ([instructions/3-library-instructions.md](instructions/3-library-instructions.md))

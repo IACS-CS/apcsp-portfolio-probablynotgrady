@@ -1,4 +1,4 @@
-import {applyTheme, TextInterface, themes} from "text-interface";
+import { applyTheme, TextInterface, themes } from "text-interface";
 import "../styles/styles.css";
 import { startRouter } from "./router.js";
 import "@picocss/pico/css/pico.min.css";
@@ -20,15 +20,15 @@ while (true) {
   const [cmd, ...args] = prompt.split(" ");
   if (cmd === "clear") {
     terminal.clear();
- } else if (cmd === "help"){
-  terminal.output("Available commands: help, clear.");
-  // trying to get "command" + "argument" format to work to no avail.
- } else if (cmd === "load" && args ) {
-  terminal.output("Loading Binary Search project");
-  terminal.output("Loading failed!")
- } else if (cmd === "load") {
-  terminal.output("What to load?");
- } else {
-  terminal.output("Command not found: " + cmd);
- }
+  } else if (cmd === "help") {
+    terminal.output("Available commands: help, clear.");
+    // trying to get "command" + "argument" format to work to no avail.
+  } else if (cmd === "load" && args) {
+    terminal.output("Loading Binary Search project");
+    terminal.output("Loading failed!");
+  } else if (cmd === "load") {
+    terminal.output("What to load?");
+  } else {
+    terminal.output("Command not found: " + cmd);
+  }
 }
