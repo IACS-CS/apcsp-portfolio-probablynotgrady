@@ -2,12 +2,12 @@
 
 body {
   --ti-max-width: 100vw;
+  --ti-max-height: 100vh;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #terminal {
   width: 100vw;
   height: 100vh;
-  margin-top: 5vh;
 }
 #fullscreen {
   position: fixed;
@@ -21,10 +21,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-#fullscreen > div {
+body > div {
  display: none;
 }
-#fullscreen > div.active {
+body > div.active {
  display: block;
  flex-grow: 1;
 }

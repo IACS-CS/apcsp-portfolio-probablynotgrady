@@ -10,7 +10,7 @@ export function renderIframe(url, title = "Project", height = 400) {
       height="${height}px"
       allowfullscreen
     ></iframe>
-    <a href="${url}" target="_blank" rel="noopener">Open ${title} in new tab</a>
+    <a href="${url}" target="_blank" rel="noopener" role="button" button class="outline">Open ${title} in new tab</a>
     <!-- end code generated in renderIframe.js -->
   `;
 }

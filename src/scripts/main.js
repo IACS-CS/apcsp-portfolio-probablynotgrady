@@ -23,11 +23,14 @@ while (true) {
   } else if (cmd === "help") {
     terminal.output("Available commands: help, clear.");
     // trying to get "command" + "argument" format to work to no avail.
-  } else if (cmd === "load" && args) {
-    terminal.output("Loading Binary Search project");
-    terminal.output("Loading failed!");
   } else if (cmd === "load") {
-    terminal.output("What to load?");
+    if (args.length === 0) {
+      terminal.output("You need to specify what to load");
+    } else if (args[0] === "binary-search") {
+      window.location.href = "/#/binary-search";
+    } else {
+      window.location.href = "/#/"+args[0];
+    }
   } else {
     terminal.output("Command not found: " + cmd);
   }
