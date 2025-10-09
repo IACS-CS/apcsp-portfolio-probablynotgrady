@@ -13,7 +13,7 @@ export function route(path) {
     return renderWelcome();
   } else {
     // hide terminal on other pages
-    document.getElementById("body").classList.remove("active");
+    document.getElementById("terminal").classList.remove("active");
     // show "app"
     document.getElementById("app").classList.add("active");
     if (path === "/binary-search") {

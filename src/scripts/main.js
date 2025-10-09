@@ -21,13 +21,15 @@ while (true) {
   if (cmd === "clear") {
     terminal.clear();
   } else if (cmd === "help") {
-    terminal.output("Available commands: help, clear.");
+    terminal.output("Available commands: help, clear, load");
     // trying to get "command" + "argument" format to work to no avail.
   } else if (cmd === "load") {
     if (args.length === 0) {
       terminal.output("You need to specify what to load");
     } else if (args[0] === "binary-search") {
       window.location.href = "/#/binary-search";
+    } else if (args[0] !== "binary-search") {
+      terminal.output("Page " + args[0] + " does not exist." )
     } else {
       window.location.href = "/#/"+args[0];
     }

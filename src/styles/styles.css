@@ -32,3 +32,6 @@ body > div.active {
 #text-interface {
   min-height: 100vh;
 }
+div.prompt {
+  color: #00ff00
+}
