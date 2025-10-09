@@ -2,7 +2,7 @@
 import { renderMenu } from "../utils/renderMenu.js";
 import { renderIframe } from "../utils/renderIframe.js";
 
-export function renderPortfolio() {
+export function renderCitations() {
   /* html */
   return `
     <!-- code generated in binarySearch.js -->
