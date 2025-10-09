@@ -26,7 +26,7 @@ while (true) {
   } else if (cmd === "load") {
     if (args.length === 0) {
       terminal.output("You need to specify what to load");
-    } else if (args[0] === "binary-search") {
+    } else if (args[0] === "binary-search" || args[0] === "binary") {
       window.location.href = "/#/binary-search";
     } else if (args[0] !== "binary-search") {
       terminal.output("Page " + args[0] + " does not exist." )
