@@ -6,16 +6,14 @@ export function renderCitations() {
   /* html */
   return `
     <!-- code generated in binarySearch.js -->
-    <h1>Portfolio Project</h1>    
+    <h1>Citations</h1>    
     ${renderMenu()}
     <article>
-      <p>Assignment: Create a program that functions as a portfolio, and include links to all of your APCSP projects.</p>
+      <p>Libraries Used:</p>
       <hr>
-      <p>My project was super fun, I worked hard on it!</p>
-      ${renderIframe(
-        "https://en.wikipedia.org/wiki/Placeholder",
-        "Linux Terminal Portfolio"
-      )}
+      <p>Text-Interface</p>
+      <p>PicoCSS</p>
+      This website was built with help from Microsoft Copilot and Mr. Hinkle.
     </article>
     <!-- end code generated in binarySearch.js -->
   `;
