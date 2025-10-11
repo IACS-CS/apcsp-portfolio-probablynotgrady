@@ -14,7 +14,7 @@ export function renderBinarySearch() {
       <p>This project was very fun to work on, and it gave me great practice on branching if statements.</p>
       ${renderIframe(
         "https://iacs-cs.github.io/binary-search-chase-and-ava/",
-        "Chas + Ava's Binary Search Project"
+        "Chase + Ava's Binary Search Project"
       )}
     </article>
     <!-- end code generated in binarySearch.js -->

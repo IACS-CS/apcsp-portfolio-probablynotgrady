@@ -1,6 +1,5 @@
 // src/scripts/pages/binarySearch.js
 import { renderMenu } from "../utils/renderMenu.js";
-import { renderIframe } from "../utils/renderIframe.js";
 
 export function renderCitations() {
   /* html */
