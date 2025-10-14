@@ -28,17 +28,17 @@ while (true) {
     if (args.length === 0) {
       terminal.output("You need to specify what to load");
     } else if (args[0] === "binary-search" || args[0] === "binary") {
-      terminal.output("Loading Binary Search Project, Please Wait...")
+      terminal.output("Loading Binary Search Project, Please Wait...");
       setTimeout(function() {
       window.location.href = "/#/binary-search";
       }, 1800);
     } else if (args[0] === "portfolio" || args[0] === "portfolio-project") {
-      terminal.output("Loading Portfolio Project, Please Wait...")
+      terminal.output("Loading Portfolio Project, Please Wait...");
       setTimeout(function() {
       window.location.href = "/#/portfolio-project";
       }, 1800);
     } else if (args[0] === "citations" || args[0] === "cite") {
-      terminal.output("Loading Citations Page, Please Wait...")
+      terminal.output("Loading Citations Page, Please Wait...");
       setTimeout(function() {
       window.location.href = "/#/citations";
       }, 1800);
@@ -54,7 +54,7 @@ while (true) {
   } else if (cmd === "ls") {
     terminal.output("Use 'dir' like a real computer user, none of this Linux nonsense here.");
   } else if (cmd === "cd") {
-    terminal.output("Guests are not allowed to change directories.")
+    terminal.output("Guests are not allowed to change directories.");
   } else if (cmd === "reload") {
     terminal.output("Reloading, Please Wait...")
     window.location.reload();

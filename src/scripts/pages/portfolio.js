@@ -13,7 +13,7 @@ export function renderPortfolio() {
       <hr>
       <p>My project was super fun, I worked hard on it!</p>
       ${renderIframe(
-        "https://en.wikipedia.org/wiki/Placeholder",
+        "https://iacs-cs.github.io/apcsp-portfolio-probablynotgrady/",
         "Linux Terminal Portfolio"
       )}
     </article>
