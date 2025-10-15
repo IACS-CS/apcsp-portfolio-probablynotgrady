@@ -20,7 +20,7 @@ export function route(path) {
     document.getElementById("app").classList.add("active");
     if (path === "/binary-search") {
       return renderBinarySearch();
-    } else if (path === "portfolio-project") {
+    } else if (path === "/portfolio-project") {
       return renderPortfolio();
     } else if (path === "/citations") {
       return renderCitations();

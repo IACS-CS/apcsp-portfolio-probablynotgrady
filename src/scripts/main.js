@@ -30,18 +30,18 @@ while (true) {
     } else if (args[0] === "binary-search" || args[0] === "binary") {
       terminal.output("Loading Binary Search Project, Please Wait...");
       setTimeout(function() {
-      window.location.href = "/apcsp-portfolio-probablynotgrady/binary-search";
+      window.location.href = "./#/binary-search";
       }, 1800);
     } else if (args[0] === "portfolio" || args[0] === "portfolio-project") {
       terminal.output("Loading Portfolio Project, Please Wait...");
       setTimeout(function() {
       window.location.href =
-        "/apcsp-portfolio-probablynotgrady/portfolio-project";
+        "./#/portfolio-project";
       }, 1800);
     } else if (args[0] === "citations" || args[0] === "cite") {
       terminal.output("Loading Citations Page, Please Wait...");
       setTimeout(function() {
-      window.location.href = "/apcsp-portfolio-probablynotgrady/citations";
+      window.location.href = "./#/citations";
       }, 1800);
     } else if (args[0] === "help" || args[0] === "/?" || args[0] === "?") {
       terminal.output("Syntax: load [page]");
