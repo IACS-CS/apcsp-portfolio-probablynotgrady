@@ -7,7 +7,7 @@ import { renderCitations } from "./pages/citations.js";
 /* route takes a path and chooses which page to render.
 It is called each time the user clicks on a navigation link */
 export function route(path) {
-  if (path === "apcsp-portfolio-probablynotgrady/" || path === "/") {
+  if (path === "" || path === "/") {
     // show terminal on home page
     document.getElementById("terminal-container").classList.add("active");
     // hide "app"

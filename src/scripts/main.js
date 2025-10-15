@@ -7,6 +7,7 @@ import "@picocss/pico/css/pico.min.css";
 router.js) */
 startRouter();
 
+window.location.href = "./#/";
 let terminal = new TextInterface(document.querySelector("#terminal"));
 applyTheme(themes.greenTerminal);
 terminal.setPrompt("guest@Chase-DeLuca-Portfolio:~$");
