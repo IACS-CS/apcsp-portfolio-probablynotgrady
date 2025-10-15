@@ -18,11 +18,11 @@ export function route(path) {
     document.getElementById("terminal-container").classList.remove("active");
     // show "app"
     document.getElementById("app").classList.add("active");
-    if (path === "/apcsp-portfolio-probablynotgrady/binary-search") {
+    if (path === "/binary-search") {
       return renderBinarySearch();
-    } else if (path === "/apcsp-portfolio-probablynotgrady/portfolio-project") {
+    } else if (path === "portfolio-project") {
       return renderPortfolio();
-    } else if (path === "/apcsp-portfolio-probablynotgrady/citations") {
+    } else if (path === "/citations") {
       return renderCitations();
     } else {
       return `<h1>404 Not Found</h1><a href="#/">Back Home</a>`;
