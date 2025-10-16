@@ -8,13 +8,18 @@ router.js) */
 startRouter();
 
 window.location.href = "./#/";
-let terminal = new TextInterface(document.querySelector("#terminal"));
+let termEl = document.querySelector("#terminal");
+let terminal = new TextInterface(termEl);
+termEl.addEventListener("click", () => {
+  termEl.querySelector(".input").focus(); 
+// steal focus but like properly, Mr. Hinkle help with this
+});
 applyTheme(themes.greenTerminal);
-terminal.setPrompt("guest@Chase-DeLuca-Portfolio:~$");
+terminal.setPrompt("C:\\>");
 terminal.hideTitle();
 terminal.outputAnimationLength = 0;
-terminal.shouldStealFocus = true;
 terminal.setPlaceholder("");
+terminal.shouldStealFocus = true;
 terminal.output("type 'help' for a list of commands");
 terminal.output("type 'load /?' or 'load help' for help loading pages");
 while (true) {
@@ -22,7 +27,7 @@ while (true) {
   const [cmd, ...args] = prompt.split(" ");
   if (cmd === "clear") {
     terminal.clear();
-  } else if (cmd === "help") {
+  } else if (cmd === "help" || cmd === "/?") {
     terminal.output("Available commands: help, clear, load, ls, dir, cd");
 // loading command, navigates to different pages
   } else if (cmd === "load") {
@@ -53,8 +58,10 @@ while (true) {
     }
   } else if (cmd === "dir") {
     terminal.output("Guests are not allowed to view directory contents.");
+    terminal.output("Note: for listing all of the available pages, use 'load /?' or 'load help'");
   } else if (cmd === "ls") {
     terminal.output("Use 'dir' like a real computer user, none of this Linux nonsense here.");
+     terminal.output("Note: for listing all of the available pages, use 'load /?' or 'load help'");
   } else if (cmd === "cd") {
     terminal.output("Guests are not allowed to change directories.");
   } else if (cmd === "reload") {
